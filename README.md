@@ -8,6 +8,9 @@ A list of names of participants/organizations/countries.
 ### Dataset
 * A short description of the dataset.
 * A table exaplaining the attribute information.
+| Column Header | Description | Example | 
+|[Full Name](https://github.com/[github handle])| @johnDoe        |
+|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
 ### Installation
 Link to install the code locally.
 ### Example Usage
