@@ -13,6 +13,7 @@ A list of names of participants/organizations/countries.
 | ------------- | ------------- |------------- |
 | Content Cell  | Content Cell  | Content Cell  |
 | Content Cell  | Content Cell  | Content Cell  |
+| ...  | ...  | ...  |
 
 ### Installation
 Link to install the code locally.
