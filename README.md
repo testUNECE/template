@@ -1,4 +1,4 @@
-This is a template readme file
+This is a template readme file.
 # Project Name
 A short description of the project.
 
