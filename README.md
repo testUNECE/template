@@ -1,5 +1,5 @@
 This is a template readme file.
-# Project Name
+# Project Title
 A short description of the project.
 ## Project Objective
 One paragraph of the purspose/main goals of the project.
