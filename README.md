@@ -9,8 +9,8 @@ A list of names of participants/organizations/countries.
 * A short description of the dataset.
 * A table exaplaining the attribute information.
 | Column Header | Description | Example | 
-|[Full Name](https://github.com/[github handle])| @johnDoe        |
-|[Full Name](https://github.com/[github handle]) |     @janeDoe    |
+| --- | --- | --- |
+| Content Cell | Content Cell | Content Cell |
 ### Installation
 Link to install the code locally.
 ### Example Usage
