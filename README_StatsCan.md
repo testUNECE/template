@@ -10,7 +10,7 @@ This repository contains the code to perform text classification utilizing Bayes
 ## Deployment
 1.  Clone GitHub repository by running `!git clone https://github.com/UNECE/CodingandClassification_Statcan.git` to local cell; 
 2.	Modify the `train_data` and `test_data` objects in `Bayesian Tuning.ipynb` to the formatted training dataset and testing dataset;
-3.	Run Bayesian Tuning.ipynb.
+3.	Run `Bayesian Tuning.ipynb`.
 
 ## Dataset
 Brief description of the datasets with explanations of the column headers.
