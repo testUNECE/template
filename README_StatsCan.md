@@ -25,14 +25,14 @@ Brief description of the datasets with explanations of the column headers.
 
 ### caeser_cipher.py
 * Import a package: unicodedata
-* Define a function *strip_accents()* to return a unicode text to pure ascii. 
+* Define a function `strip_accents()` to return a unicode text to pure ascii. 
    * Input
       A sentence, called text.
   * Algorithm
       1. Perform a Canonical Decomposition (NFD) of the Unicode text;
       2. Transform the NFD mapped characters into ascii;
       3.  Decode characters with UTF-8.
-* Define a function *cipher()* to encrypt text using the Caesar Cipher technique.
+* Define a function `cipher()` to encrypt text using the Caesar Cipher technique.
    * Input
       1.	A sentence, called sentence.
       2.	An integer indicates the shift, called shift_value.
@@ -45,14 +45,14 @@ Brief description of the datasets with explanations of the column headers.
 ### Bayesian Tunng.ipynb
 Code reference: https://github.com/thuijskens/bayesian-optimization
 * Import packages: sklearn.guassian_process, numpy, pandas, scipy.stats.norm, scipy.optimize.minimize, fastText, os
-* Define a function *get_tuning_params()* to get tunning parameters.
+* Define a function `get_tuning_params()` to get tunning parameters.
    * Input
       1.	A list of boundaries of hyperparameters, called bounds.
       2.	A list of keys of hyperparameters, called hyper_params.
    * Algorithm
       1.	A list of boundaries of hyperparameters, called bounds.
       2.	A list of keys of hyperparameters, called hyper_params.
-* Define a function *expected_improvement()* to get expected improvements.
+* Define a function `expected_improvement()` to get expected improvements.
    * Input
       1.	An array with a dimension of number of samples times number of hyperparameters, called x.
       2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
@@ -63,7 +63,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       1.	Reshape x to have a dimension of number of samples times number of hyperparameters;
       2.	Acquire values of mu, sigma, loss, and scaling factor for the Gaussian Process;
       3.	Calculate expected improvement.
-* Define a function *sample_next_ hyperparameter()* to get the next hyperparameter to sample the loss function for. 
+* Define a function `sample_next_ hyperparameter()` to get the next hyperparameter to sample the loss function for. 
    * Input
       1.	An objective function to be optimized, called acquisition_func.
       2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
@@ -74,7 +74,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
    * Algorithm
       1.	Optimize the objective function with method ‘L-BFGS-B’ (a type of quasi-Newton methods using a limited amount of computer memory).
       2.	Compare the optimized value with initial value
-* Define a function *Bayesian_optimisation()* to optimize the loss function sample_loss using Gaussian Processes. 
+* Define a function `Bayesian_optimisation()` to optimize the loss function sample_loss using Gaussian Processes. 
    * Input
       1.	An integer indicates the number of iterations to run the search algorithm, called n_iters
       2.	A loss function to be optimized, called sample_loss.
@@ -92,7 +92,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       4.	In case of duplicates, randomly draw next query point from a uniform distribution;
       5.	Recall loss function to sample loss for new set of parameters;
       6. Update the values of parameters and loss at each iteration.
-* Define the loss function *sample_loss()* to be optimized. 
+* Define the loss function `sample_loss()` to be optimized. 
    * Input
       1.	A list of values of hyperparameters, called points.
       2.	A list of keys of hyperparameters, called hyperparams.
