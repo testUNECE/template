@@ -2,10 +2,10 @@
 This repository contains the code to perform text classification utilizing Bayesian optimization, where loss function is defined by fastText technique. 
 
 ## Requirements
-Anaconda (python 3.6)/Google Colab
-Sklearn
-Scipy
-fastText
+* Anaconda (python 3.6)/Google Colab
+* Sklearn
+* Scipy
+* bfastText
 
 ## Deployment
 1.	Modify the train_data and test_data objects in Bayesian Tuning.ipynb to the formatted training dataset and testing dataset;
