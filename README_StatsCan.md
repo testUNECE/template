@@ -27,7 +27,7 @@ Brief description of the datasets with explanations of the column headers.
 unicodedata
 * Define a function strip_accents() to return a unicode text to pure ascii. 
   * Input
-A sentence, called text.
+  A sentence, called text.
   * Algorithm
   1. Perform a Canonical Decomposition (NFD) of the Unicode text;
   2. Transform the NFD mapped characters into ascii;
@@ -36,15 +36,15 @@ A sentence, called text.
  * Input
  1.	A sentence, called sentence.
  2.	An integer indicates the shift, called shift_value.
-##### Algorithm
-1.	Traverse the given text one character at a time;
-2.	Get the ascii representation of the character, then add the shifted value on it;
-3.	Encrypt uppercase characters and lowercase characters separately;
-4.	Concatenate encrypted characters together.
+ * Algorithm
+ 1.	Traverse the given text one character at a time;
+ 2.	Get the ascii representation of the character, then add the shifted value on it;
+ 3.	Encrypt uppercase characters and lowercase characters separately;
+ 4.	Concatenate encrypted characters together.
 
 ### Bayesian Tunng.ipynb
 Code reference: https://github.com/thuijskens/bayesian-optimization
-#### Import packages
+* Import packages
 sklearn.guassian_process, numpy, pandas, scipy.stats.norm, scipy.optimize.minimize, fastText, os
 #### Define a function get_tuning_params() to get tunning parameters.
 ##### Input
