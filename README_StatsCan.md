@@ -9,7 +9,7 @@ This repository contains the code to perform text classification utilizing Bayes
 
 ## Deployment
 1.  Clone GitHub repository by running `!git clone https://github.com/UNECE/CodingandClassification_Statcan.git` to local cell; 
-2.	Modify the train_data and test_data objects in `Bayesian Tuning.ipynb` to the formatted training dataset and testing dataset;
+2.	Modify the `train_data` and `test_data` objects in `Bayesian Tuning.ipynb` to the formatted training dataset and testing dataset;
 3.	Run Bayesian Tuning.ipynb.
 
 ## Dataset
@@ -23,7 +23,7 @@ Brief description of the datasets with explanations of the column headers.
 
 ## Code Files Explanation
 
-### caeser_cipher.py
+### `caeser_cipher.py`
 * Import a package: unicodedata
 * Define a function `strip_accents()` to return a unicode text to pure ascii. 
    * Input
@@ -42,7 +42,7 @@ Brief description of the datasets with explanations of the column headers.
       3.	Encrypt uppercase characters and lowercase characters separately;
       4.	Concatenate encrypted characters together.
 
-### Bayesian Tunng.ipynb
+### `Bayesian Tunng.ipynb`
 Code reference: https://github.com/thuijskens/bayesian-optimization
 * Import packages: sklearn.guassian_process, numpy, pandas, scipy.stats.norm, scipy.optimize.minimize, fastText, os
 * Define a function `get_tuning_params()` to get tunning parameters.
