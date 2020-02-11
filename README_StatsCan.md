@@ -57,7 +57,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       1.	An array with a dimension of number of samples times number of hyperparameters, called x.
       2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
       3.	An array of values of loss function for the previously evaluated hyperparameters, called evaluated_loss.
-      4.	 A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
+      4.	A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
       5.	An integer indicates the number of hyperparameters, called n_params.
    * Algorithm
       1.	Reshape x to have a dimension of number of samples times number of hyperparameters;
@@ -68,7 +68,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       1.	An objective function to be optimized, called acquisition_func.
       2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
       3.	An array of values of loss function for the previously evaluated hyperparameters, called evaluated_loss.
-      4.	A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
+      4. A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
       5. A tuple contains bounds of the L-BFGS optimizer, called bounds.
       6.	An integer indicates the number of times to run the minimizer with different start points.
    * Algorithm
