@@ -5,7 +5,7 @@ This repository contains the code to perform text classification utilizing Bayes
 * Anaconda (python 3.6)/Google Colab
 * Sklearn
 * Scipy
-* bfastText
+* fastText
 
 ## Deployment
 1.  Clone GitHub repository by running `!git clone https://github.com/UNECE/CodingandClassification_Statcan.git` to local cell; 
