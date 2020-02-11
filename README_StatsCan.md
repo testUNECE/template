@@ -23,12 +23,12 @@ Brief description of the datasets with explanations of the column headers.
 ## Code Files Explanation
 
 ### caeser_cipher.py
-#### Import a package
+* Import a package
 unicodedata
-#### Define a function strip_accents() to return a unicode text to pure ascii. 
-##### Input
+* Define a function strip_accents() to return a unicode text to pure ascii. 
+** Input
 A sentence, called text.
-##### Algorithm
+** Algorithm
 1. Perform a Canonical Decomposition (NFD) of the Unicode text;
 2. Transform the NFD mapped characters into ascii;
 3.  Decode characters with UTF-8.
