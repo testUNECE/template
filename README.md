@@ -1,11 +1,13 @@
-This is a template readme file.
-# Project Title
-A short description of the project.
-## Project Objective
-One paragraph of the purspose/main goals of the project.
-## Project Participants
-A list of names of participants/organizations/countries.
-## Coding
+### This is a read me file for StatsCan
+# Coding and Classification using Bayesian Optimization 
+This repository contains the code to perform text classification utilizing Bayesian optimization, where loss function is defined by fastText technique. 
+
+## Requirements
+Anaconda (python 3.6)/Google Colab
+Sklearn
+Scipy
+fastText
+
 ### Dataset
 * A short description of the dataset and link to the dataset if it is stored in a public repository.
 * A table exaplaining the attribute information.
