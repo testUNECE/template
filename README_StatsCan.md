@@ -47,44 +47,46 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
 * Import packages: sklearn.guassian_process, numpy, pandas, scipy.stats.norm, scipy.optimize.minimize, fastText, os
 * Define a function `get_tuning_params()` to get tunning parameters.
    * Input
-      1.	A list of boundaries of hyperparameters, called bounds.
-      2.	A list of keys of hyperparameters, called hyper_params.
+      1.	A list of boundaries of hyperparameters, called `bounds`.
+      2.	A list of keys of hyperparameters, called `hyper_params`.
    * Algorithm
-      1.	A list of boundaries of hyperparameters, called bounds.
-      2.	A list of keys of hyperparameters, called hyper_params.
+     1.	Traverse the given bounds one bound at a time;
+     2.	Under each bound, traverse the given hyperparameters one at a time;
+     3.	Assign a random integer as an initial value of the hyperparameter;
+     4.	Concatenate values of hyperparameters together. 
 * Define a function `expected_improvement()` to get expected improvements.
    * Input
-      1.	An array with a dimension of number of samples times number of hyperparameters, called x.
-      2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
-      3.	An array of values of loss function for the previously evaluated hyperparameters, called evaluated_loss.
-      4.	A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
-      5.	An integer indicates the number of hyperparameters, called n_params.
+      1.	An array with a dimension of number of samples times number of hyperparameters, called `x`.
+      2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called `guassian_process`.
+      3.	An array of values of loss function for the previously evaluated hyperparameters, called `evaluated_loss`.
+      4.	A Boolean value indicates whether the loss function is to be maximized or minimized, called `greater_is_better`.
+      5.	An integer indicates the number of hyperparameters, called `n_params`.
    * Algorithm
       1.	Reshape x to have a dimension of number of samples times number of hyperparameters;
       2.	Acquire values of mu, sigma, loss, and scaling factor for the Gaussian Process;
       3.	Calculate expected improvement.
 * Define a function `sample_next_ hyperparameter()` to get the next hyperparameter to sample the loss function for. 
    * Input
-      1.	An objective function to be optimized, called acquisition_func.
-      2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called guassian_process.
-      3.	An array of values of loss function for the previously evaluated hyperparameters, called evaluated_loss.
-      4. A Boolean value indicates whether the loss function is to be maximized or minimized, called greater_is_better.
-      5. A tuple contains bounds of the L-BFGS optimizer, called bounds.
-      6.	An integer indicates the number of times to run the minimizer with different start points.
+      1.	An objective function to be optimized, called `acquisition_func`.
+      2.	A GuassianProcessRegressor object that is trained on previously evaluated hyperparameters, called `guassian_process`.
+      3.	An array of values of loss function for the previously evaluated hyperparameters, called `evaluated_loss`.
+      4. A Boolean value indicates whether the loss function is to be maximized or minimized, called `greater_is_better`.
+      5. A tuple contains bounds of the L-BFGS optimizer, called `bounds`.
+      6.	An integer indicates the number of times to run the minimizer with different start points, called `n_restarts`.
    * Algorithm
       1.	Optimize the objective function with method ‘L-BFGS-B’ (a type of quasi-Newton methods using a limited amount of computer memory).
       2.	Compare the optimized value with initial value
 * Define a function `Bayesian_optimisation()` to optimize the loss function sample_loss using Gaussian Processes. 
    * Input
-      1.	An integer indicates the number of iterations to run the search algorithm, called n_iters
-      2.	A loss function to be optimized, called sample_loss.
-      3.	An array contains lower and upper bounds on the parameters of the function sample_loss, called bounds.
-      4.	A list of lists from which each list contains a key of hyperparameter and initial values (low and high) of this hyperparameter, called tuning_vars.
-      5.	An integer indicates the number of points to sample from the loss function, called n_pre_samples.
-      6.	A dictionary contains parameters to pass on to the Gaussian Process, gp_params.
-      7.	An integer indicates whether to perform a random search or a L-BFGS-B optimization over the acquisition function, called random_search.
-      8.	A double indicates the variance of the error term of the Gaussian Process, called alpha.
-      9.	A double indicates the precision tolerance for floats, called epsilon.
+      1.	An integer indicates the number of iterations to run the search algorithm, called `n_iters`.
+      2.	A loss function to be optimized, called `sample_loss`.
+      3.	An array contains lower and upper bounds on the parameters of the function `sample_loss`, called `bounds`.
+      4.	A list of lists from which each list contains a key of hyperparameter and initial values (low and high) of this hyperparameter, called `tuning_vars`.
+      5.	An integer indicates the number of points to sample from the loss function, called `n_pre_samples`.
+      6.	A dictionary contains parameters to pass on to the Gaussian Process, called `gp_params`.
+      7.	An integer indicates whether to perform a random search or a L-BFGS-B optimization over the acquisition function, called `random_search`.
+      8.	A double indicates the variance of the error term of the Gaussian Process, called `alpha`.
+      9.	A double indicates the precision tolerance for floats, called `epsilon`.
    * Algorithm
       1.	Initialize values of parameters and loss;
       2.	Create the Gaussian Process;
@@ -94,8 +96,8 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       6. Update the values of parameters and loss at each iteration.
 * Define the loss function `sample_loss()` to be optimized. 
    * Input
-      1.	A list of values of hyperparameters, called points.
-      2.	A list of keys of hyperparameters, called hyperparams.
+      1.	A list of values of hyperparameters, called `points`.
+      2.	A list of keys of hyperparameters, called `hyperparams`.
       3.	An integer with initialized value 0 indicates the number of iterations the loss function takes to complete training the data.
    * Algorithm
       1.	Initialize hyperparameters;
