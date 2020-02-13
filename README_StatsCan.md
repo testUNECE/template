@@ -34,8 +34,8 @@ Brief description of the datasets with explanations of the column headers.
       3.  Decode characters with UTF-8.
 * Define a function `cipher()` to encrypt text using the Caesar Cipher technique.
    * Input
-      1.	A sentence, called sentence.
-      2.	An integer indicates the shift, called shift_value.
+      1.	A sentence, called `sentence`.
+      2.	An integer indicates the shift, called `shift_value`.
    * Algorithm
       1.	Traverse the given text one character at a time;
       2.	Get the ascii representation of the character, then add the shifted value on it;
