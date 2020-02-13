@@ -27,7 +27,7 @@ Brief description of the datasets with explanations of the column headers.
 * Import a package: unicodedata
 * Define a function `strip_accents()` to return a unicode text to pure ascii. 
    * Input
-      1. A sentence, called text.
+      1. A sentence, called `text`.
   * Algorithm
       1. Perform a Canonical Decomposition (NFD) of the Unicode text;
       2. Transform the NFD mapped characters into ascii;
