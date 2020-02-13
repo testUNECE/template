@@ -101,6 +101,6 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
       3.	An integer with initialized value 0 indicates the number of iterations the loss function takes to complete training the data, called `n`.
    * Algorithm
       1.	Initialize hyperparameters;
-      2.	Load training data called train_data and testing data called test_data;
+      2.	Load training data called `train_data` and testing data called `test_data`;
       3.	Assign values to hyperparameters according to their keys;
       4.	Train a fastText classification model and return its test error.
