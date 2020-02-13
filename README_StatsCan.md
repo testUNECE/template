@@ -98,7 +98,7 @@ Code reference: https://github.com/thuijskens/bayesian-optimization
    * Input
       1.	A list of values of hyperparameters, called `points`.
       2.	A list of keys of hyperparameters, called `hyperparams`.
-      3.	An integer with initialized value 0 indicates the number of iterations the loss function takes to complete training the data.
+      3.	An integer with initialized value 0 indicates the number of iterations the loss function takes to complete training the data, called `n`.
    * Algorithm
       1.	Initialize hyperparameters;
       2.	Load training data called train_data and testing data called test_data;
