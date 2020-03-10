@@ -1,4 +1,4 @@
-# Coding and Classification using Bayesian Optimization 
+# Coding and Classification Using Bayesian Optimization 
 This repository contains the code to perform text classification utilizing Bayesian optimization with loss function being defined by fastText technique. 
 
 ## Requirements
